@@ -1,0 +1,468 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --azulp: #222A68;
+    --branco: #FDFDFF;
+    --laranja: #FF8200;
+    --azulc: #9d91ff;
+    --cinza: #1d231a; 
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Bowlby One', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.max-tam{
+    width: 980px;
+    margin: auto;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a{
+    display: inline-block;
+}
+
+a:hover, li:hover{
+    text-decoration: underline;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+menu{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+img{
+    display: block;
+}
+
+header{
+    background-color: var(--azulp);
+    padding-bottom: 3px;
+}
+
+#home{
+    padding: 12px 0px;
+}
+
+.container{
+    display: flex;
+}
+
+.container > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media > menu{
+
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+header nav menu li{
+    flex-grow: 1;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.85em;
+    
+}
+
+header nav menu li a{
+    width: 100%;
+}
+
+header nav menu li:hover{
+    background-color: var(--branco);
+    transition: all 300ms 100ms ease-out;
+}
+
+header nav menu li:hover a{
+    transform: scale(1.1);
+    color: var(--azulp);
+    transition: all 300ms 100ms ease-out;
+}
+
+header nav a{
+    color: var(--branco);
+}
+
+main{
+    font-size: 1.2em;
+}
+
+.poster{
+    height: 320px;
+    background-image: url(imgs/poster1440.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+article{
+    padding: 40px 0px;
+}
+
+h1{
+    color: var(--laranja);
+}
+
+.inicio h1{
+    text-transform: capitalize;
+    font-size: 1.8em;
+    
+}
+
+article p{
+    text-indent: 3em;
+}
+
+article > p{
+    padding: 20px 15px;
+}
+
+.caixa-azul{
+    background-color: var(--azulp);
+    padding: 20px 15px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.caixa-azul section{
+    padding: 0px 20px;
+}
+
+h2{
+    font-size: 1.3em;
+    color: var(--azulc);
+    margin: 20px;
+}
+
+.caixa-azul {
+    color: var(--branco);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: var(--azulp);
+    color: var(--branco);
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+footer a{
+    color: var(--branco);
+}
+
+footer h4{
+    color: var(--laranja);
+    padding-bottom: 10px;
+    font-size: 1.15em;
+}
+
+footer section menu{
+    list-style: disc;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+    list-style-position: inside;
+    padding: 10px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+footer aside{
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .social-media{
+    width: 100%;
+    justify-content: center;
+}
+
+#home:hover, .social-media a:hover{
+    transform: scale(1.2);
+    transition: all 100ms 50ms ease-out;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.logo-alt120{
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.card-artista{
+    display: block;
+    padding: 40px;
+    font-size: 1.07em;
+    margin-top: 30px;
+}
+
+.card-artista h2{
+    margin: 0px;
+}
+
+.card-artista p{
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.card-artista > img{
+    float: right;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.card-artista aside{
+    clear: both;
+    padding-top: 30px;
+    position: relative;
+}
+
+.trap2{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.art-artistas{
+    padding: 30px 50px;
+}
+
+article.cosplays{
+    padding: 40px;
+}
+
+.cosplays p{
+    font-size: 1.12em;
+    padding: 60px 0px;
+}
+
+.cosplays figcaption{
+    text-align: center;
+
+}
+
+.poster-cosplay{
+    margin: 20px;
+}
+
+article.cosplays h1{
+    text-align: center;
+    padding: 10px 0px 40px;
+}
+
+[class="caixa-azul cosplays"]{
+    display: block;
+    clear: both;
+}
+
+[class="caixa-azul cosplays"] h2{
+    text-align: center;
+}
+
+[class="caixa-azul cosplays"] > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+    row-gap: 10px;
+    column-gap: 50px;
+    
+}
+
+.ident2{
+    text-indent: 1em;
+}
+
+[class="caixa-azul cosplays"] div figure{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+[class="caixa-azul cosplays"] img{
+    border-radius: 5px;
+}
+
+.float-right{
+    float: right;
+    padding: 40px 0px 40px 80px;
+}
+
+.some{
+    display: none;
+}
+
+.idealizador{
+    padding: 40px;
+    font-size: 1.1em;
+}
+
+.idealizador h1{
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.idealizador .caixa-azul{
+    display: block;
+    padding: 20px 40px;
+}
+
+.idealizador p{
+    margin-bottom: 20px;
+}
+
+.idealizador .caixa-azul p:last-child{
+    clear: both;
+    margin-bottom: 30px;
+}
+
+.idealizador .caixa-azul img{
+    float: left;
+    padding: 0px 30px 30px 0px;
+}
+
+.idealizador h3{
+    color: var(--laranja);
+}
+
+.idealizador .trabalhos h2{
+    color: var(--laranja);
+    margin-left: 0;
+    padding: 10px 0px;
+    
+}
+
+p.margin-b{
+    margin-bottom: 30px;
+    padding-top: 0;
+}
+
+.idealizador .trabalhos p{
+    padding-right: 30px;
+}
+
+.trabalhos .float-right{
+    padding: 0 0 0 50px;
+}
+
+.organizadores h1{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.organizadores article > img{
+    margin: auto;
+}
+
+.organizadores hr{
+    margin: 45px 0px;
+}
+
+.organizadores h2{
+    color: var(--laranja);
+    text-align: center;
+    padding: 0;
+}
+
+.mini-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.quem-somos .float-right{
+    padding-top: 0px;
+}
+
+.cards-criadores{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.cards-criadores section{
+    width: calc(50% - 10px);
+    background-color: var(--cinza);
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.cards-criadores p{
+    text-indent: 0;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+.cards-criadores h3{
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: var(--laranja);
+}
+
+.cards-criadores img{
+    float: right;
+    margin: 10px 20px;
+    border-radius: 15px;
+}
+
+.quem-somos article > p{
+    font-size: 1.2em;
+}
+
+.without-margin-bottom{
+    padding-bottom: 0;
+}
+
+.without-margin-top{
+    padding-top: 0;
+}
